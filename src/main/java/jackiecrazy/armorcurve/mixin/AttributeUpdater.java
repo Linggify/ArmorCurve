@@ -1,10 +1,10 @@
 package jackiecrazy.armorcurve.mixin;
 
-import net.minecraft.entity.ai.attributes.ModifiableAttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
-@Mixin(ModifiableAttributeInstance.class)
+@Mixin(AttributeInstance.class)
 public interface AttributeUpdater {
 
     @Invoker("compute")
