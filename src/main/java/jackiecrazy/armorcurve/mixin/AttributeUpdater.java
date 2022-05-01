@@ -7,6 +7,6 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 @Mixin(AttributeInstance.class)
 public interface AttributeUpdater {
 
-    @Invoker("compute")
+    @Invoker("setDirty")
     public void invokeUpdateAttribute();
 }
